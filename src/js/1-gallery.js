@@ -73,6 +73,7 @@ const light = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
   overlayOpacity: 0.95,
+  elementClass: 'element',
 });
 
 light.on('error.simplelightbox', function (e) {
