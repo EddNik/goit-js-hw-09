@@ -34,8 +34,8 @@ loginForm.addEventListener('submit', event => {
     alert('Fill please all fields');
   } else {
     console.log(formData);
+    localStorage.clear();
+    Object.keys(formData).forEach(key => (formData[key] = ''));
+    loginForm.reset();
   }
-  localStorage.clear();
-  Object.keys(formData).forEach(key => (formData[key] = ''));
-  loginForm.reset();
 });
